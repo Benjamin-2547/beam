@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Prompt:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="sparkles">
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+            </div>
+
+            <div class="emoji-container">
+                <div class="emoji">🌸</div>
+            </div>
+
+            <h1 class="title">Happy Valentine's Day!</h1>
+
+            <div class="message-box">
+                <p class="message">สุขสันต์วันวาเลนไทน์นะ 💝</p>
+                <p class="sub-message">ขอให้มีความสุขมากๆ มีรอยยิ้มทุกวันเลย</p>
+                
+            </div>
+
+            <div class="interactive-section">
+                <button class="heart-btn" id="heartBtn">
+                    <span class="heart">💗</span>
+                    <span class="btn-text">คลิกดูจิ</span>
+                </button>
+                <div class="hidden-message" id="hiddenMessage">
+                    <p>รักนะ จุบๆ ☺️</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="sub-message">เลื่อนลงไปอีกก</p>              
+            </div>
+
+        </div>
+
+        <!-- Extra playful sections -->
+        <div class="card extra-section scroll-reveal">
+            <div class="emoji-container">
+                <div class="emoji">😝</div>
+            </div>
+            <div class="quiz-section">
+                <p class="quiz-question">วันวาเลนไทน์อยากโดนสักทีป่าวว</p> 
+                <div class="quiz-buttons">
+                    <button class="quiz-btn" onclick="showResponse('รู้อยู่ละว่าต้องกดอันนี้ อิอิ ทักมาเดี่ยวไปหานะจ้ะะ😊')">อยากกก</button>
+                    <!-- <button class="quiz-btn" onclick="showResponse('หวังว่าจะดีขึ้นนะ 💪')">ก็ดีพอสมควร</button> -->
+                    <button class="quiz-btn escape-btn" id="escapeBtn">ไม่อะ</button>
+                </div>
+                <p class="quiz-response" id="quizResponse"></p>
+            </div>
+
+            <div>
+                <p class="sub-message">เลื่อนลงไปอีกก</p>              
+            </div>
+        </div>
+
+        <!-- <div class="card extra-section scroll-reveal">
+            <div class="fun-fact">
+                <h3>💡 Fun Fact</h3>
+                <p>รู้มั้ยว่า... วันวาเลนไทน์เป็นวันที่ส่งข้อความกันเยอะที่สุดวันหนึ่งของปี! 📱</p>
+            </div>
+        </div> -->
+<!-- 
+        <div class="card extra-section scroll-reveal">
+            <h2 class="section-title">ข้อความพิเศษ 💌</h2>
+            <div class="special-message">
+                <p>🌸 ขอให้มีแต่ความสุขและรอยยิ้มนะ</p>
+                <p>✨ ทุกวันคือวันพิเศษถ้าเรามีความสุข</p>
+                <p>💝 ดีใจที่ได้รู้จักกัน</p>
+            </div>
+        </div> -->
+
+        <div class="card extra-section scroll-reveal">
+            <div class="final-message">
+                <h2>🎉 Happy Valentine's Day! 🎉</h2>
+                <p class="small-message">ขอให้วันนี้เป็นวันที่ดีนะ 🌷</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
