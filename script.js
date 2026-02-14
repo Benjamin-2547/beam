@@ -11,6 +11,13 @@ heartBtn.addEventListener('click', function (e) {
 
         // Create floating hearts
         createFloatingHearts(e);
+
+        // แสดงข้อความเลื่อนลงไปอีก
+        setTimeout(() => {
+            const scrollPrompt1 = document.getElementById('scrollPrompt1');
+            scrollPrompt1.classList.remove('hidden');
+            scrollPrompt1.classList.add('show');
+        }, 500);
     } else {
         // Create more hearts on subsequent clicks
         createFloatingHearts(e);
@@ -112,7 +119,20 @@ function showResponse(message) {
 
     // Create confetti effect
     createConfetti();
+
+    // แสดงข้อความเลื่อนลงไปอีกอันที่ 2
+    setTimeout(() => {
+        const scrollPrompt2 = document.getElementById('scrollPrompt2');
+        scrollPrompt2.classList.remove('hidden');
+        scrollPrompt2.classList.add('show');
+    }, 800);
 }
+
+// เพิ่ม event listener สำหรับปุ่ม "อยากกก"
+const wantBtn = document.getElementById('wantBtn');
+wantBtn.addEventListener('click', function () {
+    showResponse('รู้อยู่ละว่าต้องกดอันนี้ อิอิ ทักมาเดี่ยวไปหานะจ้ะะ😊');
+});
 
 function createConfetti() {
     const emojis = ['🎉', '🎊', '✨', '💝', '🌸', '💕'];

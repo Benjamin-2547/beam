@@ -34,7 +34,7 @@
             <div class="message-box">
                 <p class="message">สุขสันต์วันวาเลนไทน์นะ 💝</p>
                 <p class="sub-message">ขอให้มีความสุขมากๆ มีรอยยิ้มทุกวันเลย</p>
-                
+
             </div>
 
             <div class="interactive-section">
@@ -47,8 +47,8 @@
                 </div>
             </div>
 
-            <div>
-                <p class="sub-message">เลื่อนลงไปอีกก</p>              
+            <div class="scroll-prompt hidden" id="scrollPrompt1">
+                <p class="sub-message">เลื่อนลงไปอีกก</p>
             </div>
 
         </div>
@@ -59,17 +59,17 @@
                 <div class="emoji">😝</div>
             </div>
             <div class="quiz-section">
-                <p class="quiz-question">วันวาเลนไทน์อยากโดนสักทีป่าวว</p> 
+                <p class="quiz-question">วันวาเลนไทน์อยากโดนสักทีป่าวว</p>
                 <div class="quiz-buttons">
-                    <button class="quiz-btn" onclick="showResponse('รู้อยู่ละว่าต้องกดอันนี้ อิอิ ทักมาเดี่ยวไปหานะจ้ะะ😊')">อยากกก</button>
+                    <button class="quiz-btn" id="wantBtn">อยากกก</button>
                     <!-- <button class="quiz-btn" onclick="showResponse('หวังว่าจะดีขึ้นนะ 💪')">ก็ดีพอสมควร</button> -->
                     <button class="quiz-btn escape-btn" id="escapeBtn">ไม่อะ</button>
                 </div>
                 <p class="quiz-response" id="quizResponse"></p>
             </div>
 
-            <div>
-                <p class="sub-message">เลื่อนลงไปอีกก</p>              
+            <div class="scroll-prompt hidden" id="scrollPrompt2">
+                <p class="sub-message">เลื่อนลงไปอีกก</p>
             </div>
         </div>
 
@@ -79,7 +79,7 @@
                 <p>รู้มั้ยว่า... วันวาเลนไทน์เป็นวันที่ส่งข้อความกันเยอะที่สุดวันหนึ่งของปี! 📱</p>
             </div>
         </div> -->
-<!-- 
+        <!-- 
         <div class="card extra-section scroll-reveal">
             <h2 class="section-title">ข้อความพิเศษ 💌</h2>
             <div class="special-message">
